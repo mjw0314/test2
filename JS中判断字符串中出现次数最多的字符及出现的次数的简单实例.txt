@@ -1,0 +1,29 @@
+<p>charAt()方法可返回指定位置的字符</p>
+<script>
+    var str = "abcaaaaacdef";
+    //console.log(str.length);
+    var obj = {};
+    for(var i = 0; i < str.length; i++){
+        if( !obj[str.charAt(i)]){
+            obj[str.charAt(i)] = 1;
+        }else{
+            obj[str.charAt(i)]++;
+        }
+    }
+    //存出现次数最多的值和次数
+    var number = '';
+    var num = 0;
+    console.log("obj为：",obj); //Object {a: 6, b: 1, c: 2, d: 1, e: 1…}
+    //i代表每一项
+    for(var i in obj){   //遍历
+        //console.log("i为：",i);
+        //obj[i] 为每一项的值
+        console.log("obj",obj[i]);
+        if(obj[i]>num){
+            num = obj[i];
+            number = i;
+        }
+    }
+    console.log("最终出现最多的字母是："+ number + ",次数为："+ num);//最终出现最多的字母是：a,次数为：6
+
+</script>
