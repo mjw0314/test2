@@ -1,0 +1,11 @@
+直接写定义函数
+function find(number,arr){
+var arrstring=arr.toString;
+var findnumber=arrstring.indexOf(number);
+if(findnumber!=-1){
+console.log("true");
+}
+else{
+console.log("false");}}
+var arr=[[1,2],[3,4]];
+find(5,arr);
