@@ -1,0 +1,4 @@
+   var s1 = Symbol('mapbar_front');
+    var s2 = Symbol('mapbar_front');  //唯一性确定的
+    console.log(s1 === s2);// false
+    console.log(s1.toString());// "Symbol('mapbar_front')"
