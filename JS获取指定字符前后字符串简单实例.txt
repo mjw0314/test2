@@ -1,0 +1,16 @@
+  <html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+ <script type="text/javascript">
+        function getStr(string,str) {
+            var  str_before = string.split(str)[0];
+            var  str_after=string.split(str)[1];
+            alert('前：'+str_before+'后：'+str_after);  
+        }
+<script>
+</head>
+<body>
+<input type="button" onclick="getStr('appraisak','r');"value="获取值“/>
+</body>
+</html>
