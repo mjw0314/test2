@@ -1,0 +1,21 @@
+<script>
+function remove(arr,item){
+var arr1=arr.slice(0);
+for(var i=0;i<arr1.length;i++){
+if(arr1[i]==item){
+arr1.splice(i,1);
+i--;}
+}
+return arr1;
+}
+</script>
+<script>
+function remove(arr,item){
+var arr1=[];
+for(var i=0;i<arr.length;i++){
+if(arr[i]!=item){
+arr1.push(arr[i]);}
+}
+return arr1;
+}
+</script>
