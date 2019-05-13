@@ -1,0 +1,7 @@
+function findall(arr,target){
+var a=[];
+arr.filter(function(item,index){
+return item===target&&a.push(index);
+}£©£»
+return a;
+}
