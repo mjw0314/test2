@@ -1,0 +1,11 @@
+function parse2Int(num){
+var newnum;
+if(num[0]=='0'&&num[1]=='x')
+{
+newnum=0;}
+else
+{
+newnum=parseInt(num);
+}
+return newnum;
+}
