@@ -1,8 +1,8 @@
-function callIt(fn){
-vars args=[];
-for(var i=1;i<arguments.length;i++£©{
-args.push(arguments[i]);
-}
-var result = fn.apply(null,args);
-return result;
+function callIt(fn) {
+    var args=[];
+    for(var i=1;i<arguments.length;i++){
+        args.push(arguments[i]);
+    }
+    var result = fn.apply(null,args);
+    return result;
 }
