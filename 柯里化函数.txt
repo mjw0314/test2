@@ -1,0 +1,11 @@
+function curry£¨fn){
+var n=fn.length;
+var args=[];
+return function(arg){
+args.push(arg);
+if(args.length<n){
+return arguments.callee;
+}
+else return fn.apply("",args);
+}
+}
